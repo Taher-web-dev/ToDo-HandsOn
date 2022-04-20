@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'date'
+dt = Date.today
+tasks = Task.create([{ description: "Visite my paraents", day: dt}, { description: "Do my daily workout", day:dt}])
