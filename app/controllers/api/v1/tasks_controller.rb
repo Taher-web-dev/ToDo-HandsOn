@@ -7,7 +7,7 @@ module Api
       end
 
       def update
-        @task = Task.find(param[:id])
+        @task = Task.find(params[:id])
         if @task.update(params_update)
           render json: {status: 'SUCCESS', message:'Task is updated', data:@task}, status: :ok
         else
