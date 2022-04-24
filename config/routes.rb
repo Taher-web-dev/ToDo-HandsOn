@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace 'api' do
     namespace 'v1' do
-      resources :tasks , only: [:index, :update, :destroy]
+      resources :tasks , only: [:index, :update, :destroy, :create]
     end
   end
 end
