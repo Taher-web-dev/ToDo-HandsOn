@@ -20,13 +20,25 @@ module Api
         if @task.destroy
           render json: {status: 'SUCCESS', message:'Task deleted successfully', data:@task}, status: :ok
         else
-          render json: {status: 'Error', message: 'Something went wrong!', data:@task}, status: :ok
+          render json: {status: 'Error', message: 'Something went wrong!', data:@task}, status: :unprocessable_entity
         end
+      end
+
+      def create
+        @task = Task.new
+        if @task.create
+          render json: {status: 'SUCCESS', message:'Task created successfully', data:@task}, status: :ok
+        else
+          render json: {status: 'Error', message:"Something went wrong, Task doesn't created!", data:@task}, status: :unprocessable_entity
       end
 
       private 
       def params_update
         params.require(:task).permit(:description, :done)
+      end
+
+      def params_create
+        params.require(:task).permit(:description, :day)
       end
     end
   end
