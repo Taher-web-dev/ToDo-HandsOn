@@ -1,24 +1,73 @@
-# README
+# TODOLIST
+- In this Project, I created a TODO backend api on MVC architecture with CRUD principles , in order to allow users add, update, delete tasks and get a list of tasks.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
 
-Things you may want to cover:
+- Ruby
+- Ruby on Rails
+- Postgresql
 
-* Ruby version
 
-* System dependencies
+[Front-end Link]()
 
-* Configuration
+[Api endpoint Link](https://afternoon-anchorage-40437.herokuapp.com/api/v1/tasks/)
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+**To get a local copy up and running follow these simple example steps:**
 
-* Deployment instructions
+### Prerequisites
 
-* ...
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Rails](https://gorails.com/)
+
+### Setup
+
+- Make sure you have Ruby on Rails set up properly on your computer
+
+``` sh
+  git clone git@github.com:Taher-web-dev/ToDo-HandsOn.git
+
+```
+
+### Install
+
+```sh
+  bundle install
+```
+
+### Run
+
+```
+  rails db: create
+```
+
+```
+  rails db:migrate
+```
+
+```
+  rails s
+```
+
+
+## Authors
+
+
+👤 **Taher Haggui**
+
+- GitHub: [@Taher-web-dev](https://github.com/Taher-web-dev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/taher-haggui/)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
