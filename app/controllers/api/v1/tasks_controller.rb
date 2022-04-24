@@ -30,6 +30,7 @@ module Api
           render json: {status: 'SUCCESS', message:'Task created successfully', data:@task}, status: :ok
         else
           render json: {status: 'Error', message:"Something went wrong, Task doesn't created!", data:@task}, status: :unprocessable_entity
+        end
       end
 
       private 
