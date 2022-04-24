@@ -25,7 +25,7 @@ module Api
       end
 
       def create
-        @task = Task.new
+        @task = Task.new(params_create)
         if @task.create
           render json: {status: 'SUCCESS', message:'Task created successfully', data:@task}, status: :ok
         else
